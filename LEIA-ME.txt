@@ -1,0 +1,28 @@
+PACEUP — INSTALAÇÃO E PUBLICAÇÃO GRATUITA
+
+ARQUIVOS
+- index.html: aplicativo
+- manifest.webmanifest: configuração de instalação PWA
+- sw.js: cache básico para abrir o app instalado
+- icons/: ícones
+
+PUBLICAR GRATUITAMENTE NO GITHUB PAGES
+1. No celular ou computador, acesse https://github.com e crie uma conta gratuita.
+2. Crie um repositório público chamado paceup-app.
+3. Dentro do repositório, toque em Add file > Upload files.
+4. Envie TODOS os arquivos e pastas deste ZIP, preservando a estrutura. O index.html deve ficar na raiz do repositório.
+5. Toque em Commit changes.
+6. Abra Settings > Pages.
+7. Em Build and deployment, escolha Deploy from a branch.
+8. Selecione Branch: main e Folder: /(root), depois Save.
+9. Aguarde o GitHub publicar. O endereço será parecido com https://SEU-USUARIO.github.io/paceup-app/ (use o endereço mostrado pelo GitHub).
+10. Abra esse endereço no Chrome Android, toque no menu ⋮ e escolha Instalar app ou Adicionar à tela inicial.
+
+IMPORTANTE
+- GPS do navegador exige HTTPS; GitHub Pages fornece HTTPS.
+- O mapa usa Leaflet e tiles do OpenStreetMap por internet. O mapa pode não aparecer sem conexão.
+- O app salva histórico e preferências no armazenamento local do navegador/aparelho. Exporte um backup regularmente; limpar os dados do navegador pode apagar o histórico.
+- O modo offline é parcial: o shell pode abrir, mas o mapa, tiles e bibliotecas externas precisam de internet.
+- O ranking e os amigos são demonstrativos e locais neste protótipo. Curtidas e perfis não sincronizam com outros usuários; isso exige backend, autenticação e hospedagem adicional.
+- Para GPS, conceda permissão de localização e mantenha o app aberto durante o treino. A precisão varia; distâncias pequenas podem ser filtradas.
+- O app é um protótipo inspirado em apps esportivos, não é o Strava oficial nem se conecta à conta Strava.
